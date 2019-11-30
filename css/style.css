@@ -28,6 +28,7 @@ body {
 
 code, pre {
     color: orange;
+    white-space: pre-wrap;
 }
 
 main {
@@ -68,7 +69,7 @@ main {
     margin-bottom: 3px;
     background: #444444;
     cursor: pointer;
-    transition: all 0.1s linear;
+    transition: left 0.1s linear;
 }
 
 .gallery-selection li .gallery-selection__card-name {
@@ -88,7 +89,7 @@ main {
     border-color: transparent;
     border-left-color: #444444;
     border-width: 40px 0;
-    transition: all 0.1s linear;
+    transition: right 0.1s linear, border-width 0.1s linear;
 }
 
 .gallery-selection li:last-child {
@@ -123,10 +124,8 @@ main {
 
 .gallery-item {
     display: none;
-
     position: relative;
     margin-bottom: 20px;
-    padding-bottom: 20px;
     background: #555555;
     border-width: 3px;
     border-radius: 10px;
@@ -136,13 +135,20 @@ main {
     display: block;
 }
 
-.article-header {
+.gallery-item-header {
     /* height: 80px; */
     padding: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     background: #444444;
     border-bottom: 2px solid #aaaaaa;
     border-radius: 10px 10px 0 0;
+}
+
+.tab-container {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px 0 30px;
+    min-height: 400px;
 }
 
 article p {

@@ -31,85 +31,87 @@
             <article class="gallery-item">
                 <!-- <input type="checkbox" id="collapse-1" checked>
                 <label for="collapse-1"></label> -->
-                <header class="article-header">
+                <header class="gallery-item-header">
                     <h2>CSS tabs</h2> 
                 </header>            
-                <section class="tab-container">
-                    <input type="radio" id="tab-1" name="tab-select" class="tab-select">
-                    <label for="tab-1">HTML</label>
-                    
-                    <input type="radio" id="tab-2" name="tab-select" class="tab-select" checked>
-                    <label for="tab-2">CSS</label>
-                    
-                    <input type="radio" id="tab-3" name="tab-select" class="tab-select">
-                    <label for="tab-3">JavaScript</label>
-                    
-                    <input type="radio" id="tab-4" name="tab-select" class="tab-select">
-                    <label for="tab-4">Lorem ipsum</label>
-    
-                    <div class="tab-content">
-                        <p>Basically, goes like this:</p> 
-                        <pre>
-    &lt;input id="tab-{number}"&gt;
-    &lt;label for"tab-{number}"&gt;
-    [repeat a few times]
-    
-    &lt;div class="tab-content"&gt; (as many as there are inputs)</pre>
-                    </div>
-                    <div class="tab-content">
-                        <p>
-                            This is a bit scuffed because you can't just add more tabs without touching CSS (or putting in a silly amount of selectors in advance), but it seems to be the easiest way if all you want is some nice quick tabs with no JS.
-                        </p>
-                        <p>Here's how it goes:</p>
-                        <pre>
-    /* Hide the radio buttons */
-    
-    input.tab-select {
-        display: none;
-    }
-    
-    /* Style the tab label */
-    
-    input.tab-select + label {
-        ...
-    }
-    
-    /* Some visual indication of hover could be nice */
-    
-    input.tab-select + label:hover {
-        ...
-    }
-    
-    /* Selected tab */
-    
-    input.tab-select:checked + label,
-    input.tab-select:checked + label:hover {
-        ...
-    }
-    
-    /* Style the content box */
-    
-    input.tab-select ~ .tab-content {
-        display: none;
-        ...
-    }
-    
-    /* When the first input is checked, unhide the first content box, etc */
-    
-    input:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
-    input:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
-    ... {
-        display: block;
-    }
-                        </pre>
-                    </div>
-                    <div class="tab-content">
-                        <p><em>None!</em></p>
-                    </div>
-                    <div class="tab-content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt illum recusandae voluptatem fugit totam ipsum expedita, exercitationem repellendus corporis ut est at itaque fuga molestias perspiciatis consequuntur in nisi quibusdam distinctio, quod inventore? Sit iusto cupiditate provident, ullam corrupti, nihil nam cumque quia architecto, quos est possimus laudantium id similique soluta? Delectus soluta reiciendis consequatur, culpa mollitia deleniti ratione ut vitae ipsum porro placeat consequuntur earum, sint modi similique quod. Nemo ex facilis magni, asperiores quasi optio ea enim dignissimos at debitis est voluptatum numquam exercitationem, reprehenderit tenetur, eveniet quam dolore beatae veritatis? Quae eum, minus commodi sed excepturi reprehenderit vitae ut voluptates provident officiis rem? Unde ratione ad earum eos eveniet est vel sunt quasi aliquid velit facilis excepturi facere eligendi, amet accusantium recusandae perspiciatis voluptates. Iure labore dicta obcaecati aspernatur, ipsam asperiores voluptate itaque magnam fugiat velit id reiciendis in natus similique quasi, quod, doloribus molestias? Expedita ducimus corporis sapiente eos ipsum repellat. Ut culpa, illo libero totam sapiente amet cum in delectus consequatur magnam iste velit odio. Illo quam obcaecati quaerat commodi, fuga placeat cumque veritatis repellat adipisci, quae omnis explicabo nisi dolore id facere laudantium modi in quibusdam ullam dolorum. Repudiandae eaque aliquam quia corporis, atque, amet quidem vel dicta a facere, expedita iure. Perferendis deserunt beatae debitis dolor dolorum aperiam deleniti modi vitae eveniet, repudiandae exercitationem maxime inventore explicabo nisi libero temporibus consequatur et ab expedita nulla tempora, rem praesentium aut? Corrupti itaque ut perferendis id vitae. A sit natus fugiat ipsum quis maiores veniam dignissimos at quae consequuntur beatae voluptate voluptates provident consequatur iusto, laboriosam tenetur ipsam cumque explicabo, modi velit. Pariatur blanditiis molestias cum atque facilis, dolorem consequuntur fugiat eveniet. Cumque quia maxime natus aut! Atque ab aperiam quae voluptates dolorem magnam facere hic ex possimus expedita, officia at vel dolores ducimus laborum odit dolorum culpa omnis nulla animi nesciunt odio quos. Consequatur, totam? Ipsa sapiente ipsum voluptatibus, facere voluptate enim explicabo impedit, quia rerum saepe autem nemo amet similique ex quasi consequatur hic magni placeat numquam officia! Tempore reiciendis animi eveniet blanditiis numquam praesentium, officia molestiae voluptatibus, libero quidem eum pariatur incidunt quibusdam itaque aperiam nobis velit ex eligendi! Tempora voluptatem magnam aut recusandae sint veniam, unde in porro inventore totam enim qui perferendis accusantium veritatis repellat aperiam ipsa ad itaque cum. Deserunt atque molestias facere temporibus vitae quibusdam laboriosam. Laboriosam blanditiis at alias aliquam minus? Excepturi, illum nisi quas in nostrum fuga fugiat provident eius aperiam illo ipsa ducimus laudantium corporis, accusantium itaque alias perferendis blanditiis voluptate odit, natus quam ex. Perferendis ducimus iure voluptatibus debitis odit temporibus quo sequi provident, perspiciatis assumenda. Illum error adipisci labore autem nesciunt minus delectus reprehenderit corrupti quisquam facilis sint ex nihil consectetur est quidem dignissimos placeat eaque, optio maiores expedita perferendis id earum? Temporibus culpa voluptatem consequatur blanditiis vel nisi repellat, molestias similique vero nesciunt neque doloremque quas, accusantium laboriosam non iure eum aliquid earum, quidem expedita numquam? Optio delectus impedit rerum similique? Illo necessitatibus sint deserunt qui illum dolor perspiciatis hic recusandae at!
-                        </p>
+                <section class="gallery-item-content">
+                    <div class="tab-container">
+                        <input type="radio" id="tab-1" name="tab-select" class="tab-select">
+                        <label for="tab-1">HTML</label>
+                        
+                        <input type="radio" id="tab-2" name="tab-select" class="tab-select" checked>
+                        <label for="tab-2">CSS</label>
+                        
+                        <input type="radio" id="tab-3" name="tab-select" class="tab-select">
+                        <label for="tab-3">JavaScript</label>
+                        
+                        <input type="radio" id="tab-4" name="tab-select" class="tab-select">
+                        <label for="tab-4">Lorem ipsum</label>
+        
+                        <div class="tab-content">
+                            <p>Basically, goes like this:</p> 
+                            <pre>
+        &lt;input id="tab-{number}"&gt;
+        &lt;label for"tab-{number}"&gt;
+        [repeat a few times]
+        
+        &lt;div class="tab-content"&gt; (as many as there are inputs)</pre>
+                        </div>
+                        <div class="tab-content">
+                            <p>
+                                This is a bit scuffed because you can't just add more tabs without touching CSS (or putting in a silly amount of selectors in advance), but it seems to be the easiest way if all you want is some nice quick tabs with no JS.
+                            </p>
+                            <p>Here's how it goes:</p>
+                            <pre>
+        /* Hide the radio buttons */
+        
+        input.tab-select {
+            display: none;
+        }
+        
+        /* Style the tab label */
+        
+        input.tab-select + label {
+            ...
+        }
+        
+        /* Some visual indication of hover could be nice */
+        
+        input.tab-select + label:hover {
+            ...
+        }
+        
+        /* Selected tab */
+        
+        input.tab-select:checked + label,
+        input.tab-select:checked + label:hover {
+            ...
+        }
+        
+        /* Style the content box */
+        
+        input.tab-select ~ .tab-content {
+            display: none;
+            ...
+        }
+        
+        /* When the first input is checked, unhide the first content box, etc */
+        
+        input:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+        input:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+        ... {
+            display: block;
+        }
+                            </pre>
+                        </div>
+                        <div class="tab-content">
+                            <p><em>None!</em></p>
+                        </div>
+                        <div class="tab-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt illum recusandae voluptatem fugit totam ipsum expedita, exercitationem repellendus corporis ut est at itaque fuga molestias perspiciatis consequuntur in nisi quibusdam distinctio, quod inventore? Sit iusto cupiditate provident, ullam corrupti, nihil nam cumque quia architecto, quos est possimus laudantium id similique soluta? Delectus soluta reiciendis consequatur, culpa mollitia deleniti ratione ut vitae ipsum porro placeat consequuntur earum, sint modi similique quod. Nemo ex facilis magni, asperiores quasi optio ea enim dignissimos at debitis est voluptatum numquam exercitationem, reprehenderit tenetur, eveniet quam dolore beatae veritatis? Quae eum, minus commodi sed excepturi reprehenderit vitae ut voluptates provident officiis rem? Unde ratione ad earum eos eveniet est vel sunt quasi aliquid velit facilis excepturi facere eligendi, amet accusantium recusandae perspiciatis voluptates. Iure labore dicta obcaecati aspernatur, ipsam asperiores voluptate itaque magnam fugiat velit id reiciendis in natus similique quasi, quod, doloribus molestias? Expedita ducimus corporis sapiente eos ipsum repellat. Ut culpa, illo libero totam sapiente amet cum in delectus consequatur magnam iste velit odio. Illo quam obcaecati quaerat commodi, fuga placeat cumque veritatis repellat adipisci, quae omnis explicabo nisi dolore id facere laudantium modi in quibusdam ullam dolorum. Repudiandae eaque aliquam quia corporis, atque, amet quidem vel dicta a facere, expedita iure. Perferendis deserunt beatae debitis dolor dolorum aperiam deleniti modi vitae eveniet, repudiandae exercitationem maxime inventore explicabo nisi libero temporibus consequatur et ab expedita nulla tempora, rem praesentium aut? Corrupti itaque ut perferendis id vitae. 
+                            </p>
+                        </div>
                     </div>
                 </section>
             </article>
@@ -117,19 +119,19 @@
             <article class="gallery-item">
                 <!-- <input type="checkbox" id="collapse-2">
                 <label for="collapse-2"></label> -->
-                <header class="article-header">
+                <header class="gallery-item-header">
                     <h2>A fake blog (coming soon)</h2>
                 </header>
-                <section>
+                <section class="gallery-item-content">
 
                 </section>
             </article>
 
             <article class="gallery-item">
-                <header class="article-header">
+                <header class="gallery-item-header">
                     <h2>Coming sometime</h2>
                 </header>
-                <section>
+                <section class="gallery-item-content">
 
                 </section>
             </article>

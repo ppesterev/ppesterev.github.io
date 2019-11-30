@@ -5,7 +5,7 @@ let galleryCardTemplate = galleryCardList.querySelector('#gallery-selection__car
 for(let i = 0; i < galleryItems.length; ++i) {
     let card = galleryCardTemplate.querySelector('li').cloneNode(true);
     let cardName = card.querySelector('.gallery-selection__card-name');
-    cardName.textContent = galleryItems[i].querySelector('.article-header h2').textContent;
+    cardName.textContent = galleryItems[i].querySelector('.gallery-item-header h2').textContent;
     
     card.addEventListener('click', function() {
         for(let j = 0; j < galleryItems.length; ++j) {

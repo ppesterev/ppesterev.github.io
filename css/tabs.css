@@ -1,11 +1,5 @@
 /* --- CSS tabs --- */
 
-.tab-container {
-    margin-right: 15%;
-    margin-left: 15%;
-    min-height: 400px;
-}
-
 input.tab-select {
     display: none;
 }
