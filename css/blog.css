@@ -1,0 +1,66 @@
+.fake-blog--login-screen.hidden,
+.fake-blog--main.hidden {
+    display: none;
+}
+
+.fake-blog--login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.fake-blog--login-form,
+.fake-blog--info,
+.fake-blog--posts {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #333333;
+}
+
+.fake-blog--login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fake-blog--login-screen input[type="text"],
+.fake-blog--main textarea {
+    background: #666666;
+    padding: 5px;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    color: white;
+}
+
+.fake-blog--login-screen input[type="text"]:focus,
+.fake-blog--main textarea:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: orange;
+}
+
+.fake-blog--login-submit {
+    margin-top: 10px;
+}
+
+.fake-blog--main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 400px;
+}
+
+.fake-blog--info {
+    flex-basis: 200px;
+}
+
+.fake-blog--posts {
+    flex-basis: 300px;
+}
+
+.fake-blog--post-form label {
+    display: block;
+    margin-bottom: 5px;
+}
