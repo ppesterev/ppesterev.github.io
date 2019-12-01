@@ -25,8 +25,8 @@
     align-items: center;
 }
 
-.fake-blog--login-screen input[type="text"],
-.fake-blog--main textarea {
+.fake-blog input[type="text"],
+.fake-blog textarea {
     background: #666666;
     padding: 5px;
     border: 1px solid #222222;
@@ -34,11 +34,16 @@
     color: white;
 }
 
-.fake-blog--login-screen input[type="text"]:focus,
-.fake-blog--main textarea:focus {
+.fake-blog input[type="text"]:focus,
+.fake-blog textarea:focus {
     box-shadow: none;
     outline: none;
     border-color: orange;
+}
+
+.fake-blog input[type="text"]::placeholder,
+.fake-blog textarea::placeholder {
+    color: #aaaaaa;
 }
 
 .fake-blog--login-submit {
@@ -53,14 +58,51 @@
 }
 
 .fake-blog--info {
-    flex-basis: 200px;
+    /* flex-basis: 200px; */
 }
 
 .fake-blog--posts {
     flex-basis: 300px;
 }
 
+.fake-blog--posts textarea {
+    width: 100%;    
+    resize: vertical;
+}
+
+.fake-blog--login-screen label,
 .fake-blog--post-form label {
     display: block;
     margin-bottom: 5px;
+}
+
+.fake-blog--avatar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #555555;
+}
+
+.fake-blog--avatar::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #aaaaaa;
+}
+
+.fake-blog--avatar::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 45%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 20px 20px 0 0;
+    background: #aaaaaa;
 }

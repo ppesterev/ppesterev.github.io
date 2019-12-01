@@ -124,25 +124,29 @@
                     <h2>A fake blog (coming soon)</h2>
                 </header>
                 <section class="gallery-item-content">
-                    <div class="fake-blog--login-screen">
-                        <form action="#" class="fake-blog--login-form">
-                            <input type="text" class="fake-blog--name-input" name="username">
-                            <input type="submit" class="fake-blog--login-submit" value="Log in">
-                        </form>
-                    </div>
-                    <div class="fake-blog--main">
-                        <div class="fake-blog--info">
-                            Name & profile pic
-                        </div>
-                        <div class="fake-blog--posts">
-                            <form action="#" class="fake-blog--post-form">
-                                <label for="post-text">New post</label>
-                                <textarea id="post-text">Write something</textarea>
-                                <input type="submit" class="fake-blog--post-submit" value="Post">
+                    <div class="fake-blog">
+                        <div class="fake-blog--login-screen">
+                            <form action="#" class="fake-blog--login-form">
+                                <label for="fake-blog-username">Username</label>
+                                <input type="text" class="fake-blog--name-input" name="username" id="fake-blog-username" autocomplete="off" required>
+                                <input type="submit" class="fake-blog--login-submit" value="Log in">
                             </form>
-                            <template id="fake-blog--post-template">
-                                
-                            </template>
+                        </div>
+                        <div class="fake-blog--main">
+                            <div class="fake-blog--info">
+                                <p class="fake-blog--info-username"></p>
+                                <div class="fake-blog--avatar"></div>
+                            </div>
+                            <div class="fake-blog--posts">
+                                <form action="#" class="fake-blog--post-form">
+                                    <label for="post-text">New post</label>
+                                    <textarea id="post-text" rows = "3" placeholder="Write something" required></textarea>
+                                    <input type="submit" class="fake-blog--post-submit" value="Post">
+                                </form>
+                                <template id="fake-blog--post-template">
+                                    
+                                </template>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -164,5 +168,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html>
