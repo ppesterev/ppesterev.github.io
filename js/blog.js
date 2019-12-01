@@ -37,7 +37,7 @@
             postDate.textContent = (new Date()).toLocaleString();
             postText.innerHTML = postTextarea.value; //replace(/\n\r?/g, '<br />')
 
-            postContainer.appendChild(newPost);
+            postContainer.insertBefore(newPost, postContainer.childNodes[0]);
             document.activeElement.blur();
             postTextarea.value = '';
         });
