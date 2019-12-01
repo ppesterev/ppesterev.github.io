@@ -34,10 +34,12 @@
             postDate = newPost.querySelector('.fake-blog--post__date');
 
             postUsername.textContent = username;
-            postDate.textContent = (new Date()).toDateString();
-            postText.textContent = postTextarea.value;
+            postDate.textContent = (new Date()).toLocaleString();
+            postText.innerHTML = postTextarea.value; //replace(/\n\r?/g, '<br />')
 
             postContainer.appendChild(newPost);
+            document.activeElement.blur();
+            postTextarea.value = '';
         });
     }
 })();

@@ -58,13 +58,15 @@
 .fake-blog button,
 .fake-blog input[type="button"],
 .fake-blog input[type="submit"] {
+    position: relative;
     margin: 10px 0;
     padding: 5px 10px;
     background: #222222;
     border: 1px solid #666666;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px 0 #666666;
-    color: white;
+    box-shadow: 0 1px 2px 0 #666666;
+    color: #dddddd;
+    cursor: pointer;
 }
 
 .fake-blog button:focus,
@@ -72,6 +74,25 @@
 .fake-blog input[type="submit"]:focus {
     outline: none;
     border-color: orange;
+}
+
+.fake-blog button:hover,
+.fake-blog input[type="button"]:hover,
+.fake-blog input[type="submit"]:hover {
+    box-shadow: 0 1px 3px 0 #aaaaaa;
+}
+
+.fake-blog button:active,
+.fake-blog input[type="button"]:active,
+.fake-blog input[type="submit"]:active {
+    top: 1px;
+}
+
+.fake-blog button:active:focus,
+.fake-blog input[type="button"]:active:focus,
+.fake-blog input[type="submit"]:active:focus {
+    outline: none;
+    border-color: #666666;
 }
 
 .fake-blog--login-submit {
@@ -96,7 +117,7 @@
 .fake-blog--username {
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 1.4em;
     font-weight: 700;
 }
 
@@ -118,6 +139,22 @@
 .fake-blog--post-form label {
     display: block;
     margin-bottom: 5px;
+}
+
+.fake-blog--post__username {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #dddddd;
+}
+
+.fake-blog--post__date {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #aaaaaa;
+}
+
+.fake-blog--post__text {
+    white-space: pre-wrap;
 }
 
 .fake-blog--avatar {
