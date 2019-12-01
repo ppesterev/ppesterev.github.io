@@ -1,3 +1,7 @@
+.fake-blog--main {
+    padding: 20px;
+}
+
 .fake-blog--login-screen.hidden,
 .fake-blog--main.hidden {
     display: none;
@@ -12,11 +16,16 @@
 
 .fake-blog--login-form,
 .fake-blog--info,
-.fake-blog--posts {
-    margin: 10px;
+.fake-blog--post,
+.fake-blog--post-form {
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
     background: #333333;
+}
+
+.fake-blog--info {
+    margin-right: 20px;
 }
 
 .fake-blog--login-form {
@@ -46,6 +55,25 @@
     color: #aaaaaa;
 }
 
+.fake-blog button,
+.fake-blog input[type="button"],
+.fake-blog input[type="submit"] {
+    margin: 10px 0;
+    padding: 5px 10px;
+    background: #222222;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0 #666666;
+    color: white;
+}
+
+.fake-blog button:focus,
+.fake-blog input[type="button"]:focus,
+.fake-blog input[type="submit"]:focus {
+    outline: none;
+    border-color: orange;
+}
+
 .fake-blog--login-submit {
     margin-top: 10px;
 }
@@ -61,11 +89,27 @@
     /* flex-basis: 200px; */
 }
 
-.fake-blog--posts {
-    flex-basis: 300px;
+.fake-blog--right-column {
+    flex-basis: 400px;
 }
 
-.fake-blog--posts textarea {
+.fake-blog--username {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fake-blog--posts {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fake-blog--posts:empty {
+    display: none;
+}
+
+.fake-blog--post-form textarea {
     width: 100%;    
     resize: vertical;
 }
@@ -78,8 +122,8 @@
 
 .fake-blog--avatar {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background: #555555;
 }
 

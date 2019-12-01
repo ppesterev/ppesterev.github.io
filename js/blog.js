@@ -18,11 +18,26 @@
     });
 
     function setupMain(username) {
-        let usernameDisplay = mainScreen.querySelector('.fake-blog--info-username');
+        let usernameDisplay = mainScreen.querySelector('.fake-blog--username');
         usernameDisplay.textContent = username;
-        
+
+        let postContainer = mainScreen.querySelector('.fake-blog--posts'); 
+        let postTemplate = mainScreen.querySelector('#fake-blog--post-template').content;
+
         let postForm = mainScreen.querySelector('.fake-blog--post-form');
         let postTextarea = postForm.querySelector('.fake-blog--post-form textarea');
-        postForm.addEventListener()
+        postForm.addEventListener('submit', function(evt) {
+            evt.preventDefault();
+            let newPost = postTemplate.cloneNode(true);
+            postText = newPost.querySelector('.fake-blog--post__text');
+            postUsername = newPost.querySelector('.fake-blog--post__username');
+            postDate = newPost.querySelector('.fake-blog--post__date');
+
+            postUsername.textContent = username;
+            postDate.textContent = (new Date()).toDateString();
+            postText.textContent = postTextarea.value;
+
+            postContainer.appendChild(newPost);
+        });
     }
 })();

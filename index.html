@@ -134,18 +134,25 @@
                         </div>
                         <div class="fake-blog--main">
                             <div class="fake-blog--info">
-                                <p class="fake-blog--info-username"></p>
+                                
                                 <div class="fake-blog--avatar"></div>
                             </div>
-                            <div class="fake-blog--posts">
+                            <div class="fake-blog--right-column">
+                                <p class="fake-blog--username"></p>
                                 <form action="#" class="fake-blog--post-form">
                                     <label for="post-text">New post</label>
                                     <textarea id="post-text" rows = "3" placeholder="Write something" required></textarea>
                                     <input type="submit" class="fake-blog--post-submit" value="Post">
                                 </form>
-                                <template id="fake-blog--post-template">
-                                    
-                                </template>
+                                <div  class="fake-blog--posts">
+                                    <template id="fake-blog--post-template">
+                                        <div class="fake-blog--post">
+                                            <span class="fake-blog--post__username"></span>
+                                            <span class="fake-blog--post__date"></span>
+                                            <p class="fake-blog--post__text"></p>
+                                        </div>
+                                    </template>
+                                </div>
                             </div>
                         </div>
                     </div>
