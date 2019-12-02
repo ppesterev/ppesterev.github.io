@@ -133,8 +133,17 @@
                             </form>
                         </div>
                         <div class="fake-blog--main">
+                            <div class="fake-blog--header">
+                                <span class="fake-blog--logged-in-as">Logged in as</span>
+                                <form action="#" class="fake-blog--visit">
+                                    <label>
+                                        Visit another blog: 
+                                        <input type="text">
+                                    </label>
+                                    <input type="submit" value="Go">
+                                </form>
+                            </div>
                             <div class="fake-blog--info">
-                                
                                 <div class="fake-blog--avatar"></div>
                             </div>
                             <div class="fake-blog--right-column">
@@ -145,14 +154,15 @@
                                     <input type="submit" class="fake-blog--post-submit" value="Post">
                                 </form>
                                 <div  class="fake-blog--posts">
-                                    <template id="fake-blog--post-template">
-                                        <div class="fake-blog--post">
-                                            <span class="fake-blog--post__username"></span><br>
-                                            <span class="fake-blog--post__date"></span>
-                                            <p class="fake-blog--post__text"></p>
-                                        </div>
-                                    </template>
+                                    
                                 </div>
+                                <template id="fake-blog--post-template">
+                                    <div class="fake-blog--post">
+                                        <span class="fake-blog--post__username"></span><br>
+                                        <span class="fake-blog--post__date"></span>
+                                        <p class="fake-blog--post__text"></p>
+                                    </div>
+                                </template>
                             </div>
                         </div>
                     </div>
