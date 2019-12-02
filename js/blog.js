@@ -57,6 +57,8 @@
             let logOut = mainScreen.querySelector('#fake-blog__logout');
             logOut.addEventListener('click', function(evt) {
                 evt.preventDefault();
+                loginUsernameInput.value = '';
+                visitForm.querySelector('input[type="text"]').value = '';
                 loginScreen.classList.toggle('hidden');
                 mainScreen.classList.toggle('hidden');
             });
@@ -126,6 +128,11 @@
         if(displayedUser === username) {
             newPost.classList.add('owners-post');
         }
+        
+        postUsername.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            showBlog(username);
+        });
         postContainer.insertBefore(newPost, postContainer.firstChild);
     }
 })();
