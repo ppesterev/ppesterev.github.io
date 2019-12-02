@@ -26,6 +26,15 @@ body {
     font-style: italic;
 }
 
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;  
+}
+
 code, pre {
     color: orange;
     white-space: pre-wrap;

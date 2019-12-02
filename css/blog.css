@@ -159,7 +159,7 @@
     /* box-shadow: 
         0 4px 0 0 #555555,
         0 5px 0 0 #888888;    */
-    margin: 3px;
+    margin: 3px 0;
     /* box-shadow: 0 1px 0 0 #555555; */
     border-radius: 0;     
 }

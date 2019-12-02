@@ -6,14 +6,18 @@
 
     let loginForm = loginScreen.querySelector('.fake-blog--login-form');
     let loginUsernameInput = loginForm.querySelector('.fake-blog--name-input');
+    let firstLogin = true; //HAAAX
 
     loginForm.addEventListener('submit', function(evt) {
+
         evt.preventDefault();
         username = loginUsernameInput.value;
         if(!username)
             return;
 
         setupMain(username);
+        firstLogin = false;
+
         loginScreen.classList.toggle('hidden');
         mainScreen.classList.toggle('hidden');
     });
@@ -21,17 +25,45 @@
     function setupMain(loggedInUser) {
         let loggedInUserDislplay = mainScreen.querySelector('.fake-blog--logged-in-as');
         let usernameDisplay = mainScreen.querySelector('.fake-blog--username');
+        
         let postContainer = mainScreen.querySelector('.fake-blog--posts'); 
         let postTemplate = mainScreen.querySelector('#fake-blog--post-template').content;
+        
+        let postForm = mainScreen.querySelector('.fake-blog--post-form');
+        let postTextarea = postForm.querySelector('.fake-blog--post-form textarea');
+
+        let visitForm = mainScreen.querySelector('.fake-blog--visit');
+        let goHome = mainScreen.querySelector('#fake-blog__home');
+
         let displayedUser = loggedInUser;
         let displayedPosts = [];
 
         loggedInUserDislplay.textContent = 'Logged in as ' + loggedInUser;
         showBlog(loggedInUser);
 
-        let postForm = mainScreen.querySelector('.fake-blog--post-form');
-        let postTextarea = postForm.querySelector('.fake-blog--post-form textarea');
-        postForm.addEventListener('submit', function(evt) {
+        postForm.addEventListener('submit', submitPostHandler);
+        visitForm.addEventListener('submit', visitBlogHandler);
+        goHome.addEventListener('click', goHomeHandler);
+
+        if(firstLogin) {    
+            let logOut = mainScreen.querySelector('#fake-blog__logout');
+            logOut.addEventListener('click', function(evt) {
+                evt.preventDefault();
+                postForm.removeEventListener('submit', submitPostHandler);
+                visitForm.removeEventListener('submit', visitBlogHandler);
+                goHome.removeEventListener('click', goHomeHandler);
+
+                loginScreen.classList.toggle('hidden');
+                mainScreen.classList.toggle('hidden');
+            });
+        }
+        
+        function goHomeHandler(evt) {
+            evt.preventDefault();
+            showBlog(loggedInUser);
+        }
+
+        function submitPostHandler(evt) {
             evt.preventDefault();
             let currentDateString = (new Date()).toLocaleString();
             displayPost(loggedInUser, currentDateString, postTextarea.value);
@@ -43,12 +75,11 @@
             postTextarea.value = '';
 
             localStorage.setItem('fake-blog__' + displayedUser, JSON.stringify(displayedPosts));
-        });
+        }
 
-        let visitForm = mainScreen.querySelector('.fake-blog--visit');
-        visitForm.addEventListener('submit', function(evt) {
+        function visitBlogHandler(evt) {
             evt.preventDefault();
-            let visitUsername = this.querySelector('input[type="text"]').value;
+            let visitUsername = visitForm.querySelector('input[type="text"]').value;
             // if(localStorage.getItem('fake-blog__' + visitUsername)) {
                 displayedUser = visitUsername;
                 showBlog(visitUsername);
@@ -57,7 +88,7 @@
             //     //TODO show error
             // }
 
-        })
+        }
 
         function showBlog(username) {
             displayedUser = username;
