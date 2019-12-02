@@ -153,6 +153,10 @@ main {
     border-radius: 10px 10px 0 0;
 }
 
+.gallery-item-content > p {
+    margin: 20px 30px;
+}
+
 .tab-container {
     margin-right: 10%;
     margin-left: 10%;
