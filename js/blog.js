@@ -8,8 +8,6 @@
     let loginUsernameInput = loginForm.querySelector('.fake-blog--name-input');
     let firstLogin = true; //HAAAX
 
-
-    let loggedInUserDislplay = mainScreen.querySelector('.fake-blog--logged-in-as');
     let usernameDisplay = mainScreen.querySelector('.fake-blog--username');
     
     let postContainer = mainScreen.querySelector('.fake-blog--posts'); 
@@ -93,7 +91,7 @@
     }
 
     function showBlog(username) {
-        loggedInUserDislplay.textContent = 'Logged in as ' + loggedInUser;
+        goHome.textContent = loggedInUser;
 
         displayedUser = username;
         usernameDisplay.textContent = username;
