@@ -1,5 +1,4 @@
 body {
-    /* padding: 10px; */
     margin: 0;
     font-size: 16px;
     font-family: "Helvetica", sans-serif;
@@ -9,9 +8,7 @@ body {
 
 .site-header {
     background: #444444;
-    /* height: 100px; */
     padding: 20px;    
-    /* text-indent: 100px; */
 }
 
 .site-header, article {
@@ -42,8 +39,6 @@ code, pre {
 
 main {
     display: flex;
-    /* width: 1000px; */
-    /* margin: 10px auto; */
     padding: 10px;
 }
 
@@ -145,9 +140,7 @@ main {
 }
 
 .gallery-item-header {
-    /* height: 80px; */
     padding: 20px;
-    /* margin-bottom: 20px; */
     background: #444444;
     border-bottom: 2px solid #aaaaaa;
     border-radius: 10px 10px 0 0;
@@ -167,39 +160,3 @@ main {
 article p {
     line-height: 130%;
 }
-
-
-/* 
-article > input[type="checkbox"] {
-    display: none;
-}
-
-article > input[type="checkbox"] + label {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    width: 20px;
-    height: 20px;
-    background-image: linear-gradient(to top left, transparent 50%, #f68b1e 50%);
-    transform-origin: 33% 33%;
-    transform: rotate(45deg); */
-    /* transition: transform 0.3s ease-out;  */
-    /* cursor: pointer;
-} */
-
-/* article > input[type="checkbox"]:checked + label {
-    transform: rotate(225deg);
-} */
-
-/* article > section { */
-    /* overflow: hidden; */
-    /* padding-bottom: 30px; */
-    /* max-height: 1000px;
-    transition: all 0.3s ease-in; */
-/* } */
-
-/* article > input[type="checkbox"]:checked ~ section {
-    display: none; */
-    /* max-height: 0; */
-/* } */

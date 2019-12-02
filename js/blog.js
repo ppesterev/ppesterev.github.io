@@ -80,14 +80,10 @@
     function visitBlogHandler(evt) {
         evt.preventDefault();
         let visitUsername = visitForm.querySelector('input[type="text"]').value;
-        // if(localStorage.getItem('fake-blog__' + visitUsername)) {
             displayedUser = visitUsername;
             showBlog(visitUsername);
-        // }
-        // else {
-        //     //TODO show error
-        // }
 
+             //TODO show error
     }
 
     function showBlog(username) {
