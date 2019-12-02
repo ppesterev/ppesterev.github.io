@@ -49,13 +49,13 @@
         visitForm.addEventListener('submit', function(evt) {
             evt.preventDefault();
             let visitUsername = this.querySelector('input[type="text"]').value;
-            if(localStorage.getItem('fake-blog__' + visitUsername)) {
+            // if(localStorage.getItem('fake-blog__' + visitUsername)) {
                 displayedUser = visitUsername;
                 showBlog(visitUsername);
-            }
-            else {
-                //TODO show error
-            }
+            // }
+            // else {
+            //     //TODO show error
+            // }
 
         })
 
