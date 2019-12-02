@@ -22,8 +22,12 @@
     let loggedInUser;
     let displayedUser;
     let displayedPosts = [];
-
-
+    
+    loginScreen.querySelector('#fake-blog__wipe').addEventListener('click', function(evt) {
+        evt.preventDefault();
+        localStorage.clear();
+    });
+    
     loginForm.addEventListener('submit', function(evt) {
         evt.preventDefault();
         if(!loginUsernameInput.value)
@@ -139,26 +143,4 @@
 ],
 'fake-blog__username2': [
     ...
-]
-
-on login:
-    
-    setupMain(loggedInUser)
-        displayedUser = loggedInUser
-        showBlog(loggedInUser)
-
-        add listeners
-        on submit new post:
-            addPost(username, Date(), textarea.value)
-            add new object to userposts
-            store stringified userposts
-
-        on switch user:
-           update displayedUser 
-           showBlog(displayedUser)
-
-        showBlog(username)
-            userposts = parse(localstorage.getitem(username))
-            for each userpost
-                addPost(username, userpost.date, userpost.text)
-*/
+]*/
