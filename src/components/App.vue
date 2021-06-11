@@ -1,7 +1,7 @@
 <template>
   <header class="site-header">
     <h1 class="page-title">Neat stuff</h1>
-    <p class="page-subtitle">A neat website for neat stuff</p>
+    <p class="page-subtitle">A frontend developer's portfolio</p>
   </header>
 </template>
 
@@ -17,19 +17,24 @@ export default {
 body {
   margin: 0;
   font-size: 16px;
-  font-family: "Helvetica", sans-serif;
-  color: white;
+  font-family: "Open Sans", sans-serif;
   background: #dddddd;
 }
 
 .site-header {
-  background: #444444;
+  /* background: #444444; */
   padding: 20px;
 }
 
 .site-header,
 article {
-  border-top: 5px solid #f68b1e;
+  border-bottom: 5px solid #f68b1e;
+}
+
+.page-title,
+.page-subtitle {
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase;
 }
 
 .page-title {
@@ -37,6 +42,8 @@ article {
 }
 
 .page-subtitle {
+  font-size: 1.8em;
+  font-weight: 200;
   font-style: italic;
 }
 
