@@ -1,0 +1,34 @@
+.site-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  gap: 5px;
+}
+
+.site-nav__item {
+  display: grid;
+  place-content: end center;
+}
+
+.site-nav__link {
+  padding: 10px 20px;
+  background: #666666;
+  border-radius: 10px 10px 0 0;
+
+  color: white;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+
+  box-shadow: 0 -3px 0 0 #f68b1e;
+  cursor: pointer;
+
+  transition: all linear 0.1s;
+}
+
+.site-nav__link:hover {
+  padding-bottom: 13px;
+  margin-top: -3px;
+  box-shadow: 0 -5px 0 0 #f68b1e;
+}
