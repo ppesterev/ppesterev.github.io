@@ -1,12 +1,13 @@
 <template>
-  <header class="site-header">
-    <h1 class="page-title">Neat stuff</h1>
-    <p class="page-subtitle">A frontend developer's portfolio</p>
-  </header>
+  <AppHeader />
 </template>
 
 <script>
+import AppHeader from "./AppHeader.vue";
+
 export default {
+  components: { AppHeader },
+
   data() {
     return {};
   }
