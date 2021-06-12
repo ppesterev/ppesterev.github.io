@@ -1,6 +1,6 @@
-import { createApp } from "vue";
+import React from "react";
+import ReactDOM from "react-dom";
 
 import App from "./components/App";
 
-const app = createApp(App);
-app.mount("#app");
+ReactDOM.render(<App />, document.getElementById("app"));
