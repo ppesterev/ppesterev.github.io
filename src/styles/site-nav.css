@@ -28,7 +28,8 @@
   transition: all linear 0.1s;
 }
 
-.site-nav__link:hover {
+.site-nav__link:hover,
+.site-nav__link--active {
   padding-bottom: 13px;
   margin-top: -3px;
   box-shadow: 0 -5px 0 0 #f68b1e;

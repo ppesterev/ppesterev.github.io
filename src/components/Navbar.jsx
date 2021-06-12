@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 
 function Navbar({ className }) {
@@ -7,19 +7,31 @@ function Navbar({ className }) {
     <nav className={classNames(className, "site-nav")}>
       <ul className="site-nav__list">
         <li className="site-nav__item">
-          <Link to="/projects" className="site-nav__link">
+          <NavLink
+            to="/projects"
+            className="site-nav__link"
+            activeClassName="site-nav__link--active"
+          >
             Projects
-          </Link>
+          </NavLink>
         </li>
         <li className="site-nav__item">
-          <Link to="/demos" className="site-nav__link">
+          <NavLink
+            to="/demos"
+            className="site-nav__link"
+            activeClassName="site-nav__link--active"
+          >
             Demos
-          </Link>
+          </NavLink>
         </li>
         <li className="site-nav__item">
-          <Link to="/about" className="site-nav__link">
+          <NavLink
+            to="/about"
+            className="site-nav__link"
+            activeClassName="site-nav__link--active"
+          >
             About
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
