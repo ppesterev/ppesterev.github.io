@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -9,19 +10,19 @@ function App() {
       <nav className="site-header__nav site-nav">
         <ul className="site-nav__list">
           <li className="site-nav__item">
-            <a href="" className="site-nav__link">
+            <Link to="/projects" className="site-nav__link">
               Projects
-            </a>
+            </Link>
           </li>
           <li className="site-nav__item">
-            <a href="" className="site-nav__link">
+            <Link to="/demos" className="site-nav__link">
               Demos
-            </a>
+            </Link>
           </li>
           <li className="site-nav__item">
-            <a href="" className="site-nav__link">
+            <Link to="/about" className="site-nav__link">
               About
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
