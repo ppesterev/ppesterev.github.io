@@ -2,3 +2,6 @@
 
 @import "./site-header.css";
 @import "./site-nav.css";
+
+@import "./projects.css";
+@import "./project.css";
