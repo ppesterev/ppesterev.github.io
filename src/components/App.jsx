@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 import Header from "./Header";
 import ProjectsView from "./ProjectsView";
+import DemosView from "./DemosView";
 
 function App() {
   return (
@@ -11,11 +12,10 @@ function App() {
       <main className="clamp-width">
         <Switch>
           <Route path="/projects">
-            <h2>Projects</h2>
             <ProjectsView />
           </Route>
           <Route path="/demos">
-            <h2>Demos</h2>
+            <DemosView />
           </Route>
           <Route path="/about">
             <h2>About</h2>

@@ -2,7 +2,8 @@ import React from "react";
 
 function ProjectsView() {
   return (
-    <div className="projects">
+    <section className="projects">
+      <h2 className="visually-hidden">Projects</h2>
       <ul className="projects__list">
         {Array(4)
           .fill(null)
@@ -26,7 +27,7 @@ function ProjectsView() {
             </li>
           ))}
       </ul>
-    </div>
+    </section>
   );
 }
 
