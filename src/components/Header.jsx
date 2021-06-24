@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 function Header() {
   return (
-    <header className="site-header">
+    <header className="site-header clamp-width">
       <h1 className="site-header__title">Neat stuff</h1>
       <p className="site-header__subtitle">A frontend developer's portfolio</p>
 
