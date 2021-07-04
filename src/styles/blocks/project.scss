@@ -2,8 +2,7 @@
   padding-left: 10px;
 
   background-color: rgba(245, 245, 245, 0.2);
-  /* border-radius: 5px; */
-  box-shadow: 0 3px 5px -5px #444444;
+  box-shadow: 0 5px 5px -5px rgba(68, 68, 68, 0.5);
 }
 
 .project__title {
@@ -11,7 +10,7 @@
   padding: 5px 0;
 
   font-size: 1.5em;
-  font-family: "Montserrat", sans-serif;
+  font-family: $fonts-heading;
   font-weight: 400;
   text-transform: lowercase;
 
