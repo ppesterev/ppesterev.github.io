@@ -41,8 +41,8 @@ pre {
     minmax(10px, 1fr)
     minmax(auto, 1200px)
     minmax(10px, 1fr);
-}
 
-.clamp-width > * {
-  grid-column: 2 / -2;
+  & > * {
+    grid-column: 2 / -2;
+  }
 }

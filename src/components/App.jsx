@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import portfolioData from "../config.json";
+import portfolioData from "../portfolio-data";
 
 import Header from "./Header";
 import ProjectsView from "./ProjectsView";
