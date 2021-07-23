@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "title": "First project",
+      "description": "First project's description"
+    },
+    {
+      "title": "Second project",
+      "description": " Description of second project"
+    },
+    {
+      "title": "Third project",
+      "description": "Third project's brief description"
+    },
+    {
+      "title": "Fourth project",
+      "description": "Fourth project description"
+    }
+  ],
+
+  "demos": [
+    {
+      "title": "First demo",
+      "description": "1st demo description",
+      "link": ""
+    },
+    {
+      "title": "Second demo",
+      "description": "2nd demo description",
+      "link": ""
+    },
+    {
+      "title": "Third demo",
+      "description": "Description of 3rd demo",
+      "link": ""
+    }
+  ]
+}

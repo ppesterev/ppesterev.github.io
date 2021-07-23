@@ -1,6 +1,8 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
+import portfolioData from "../config.json";
+
 import Header from "./Header";
 import ProjectsView from "./ProjectsView";
 import DemosView from "./DemosView";
@@ -12,10 +14,10 @@ function App() {
       <main className="clamp-width">
         <Switch>
           <Route path="/projects">
-            <ProjectsView />
+            <ProjectsView projects={portfolioData.projects} />
           </Route>
           <Route path="/demos">
-            <DemosView />
+            <DemosView demos={portfolioData.demos} />
           </Route>
           <Route path="/about">
             <h2>About</h2>
