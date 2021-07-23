@@ -2,12 +2,13 @@
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-areas: "tabs display";
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 .demos__tab-list {
   grid-area: tabs;
   display: grid;
+  align-content: start;
   grid-gap: 3px;
 
   margin: 0;
