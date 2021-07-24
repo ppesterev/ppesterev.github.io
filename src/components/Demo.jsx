@@ -11,12 +11,12 @@ function Demo({ demo }) {
     const onLoad = () => setIsDemoLoaded(true);
     iframeRef.current.addEventListener("load", onLoad);
     return () => iframeRef.current.removeEventListener("load", onLoad);
-  }, [demo]);
+  }, [demo.link]);
 
   return (
     demo && (
       <div className={classNames("demo", { "demo--loading": !isDemoLoaded })}>
-        <p className="demo__desciption">{demo.description}</p>
+        <p className="demo__description">{demo.description}</p>
         {isDemoLoaded || <p>Loading...</p>}
         <iframe
           ref={iframeRef}
