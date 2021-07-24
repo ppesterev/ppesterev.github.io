@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+
+import classNames from "classnames";
 
 function Demo({ demo }) {
+  const iframeRef = useRef(null);
+  const [isDemoLoaded, setIsDemoLoaded] = useState(false);
+  useEffect(() => {
+    setIsDemoLoaded(false);
+
+    const onLoad = () => setIsDemoLoaded(true);
+    iframeRef.current.addEventListener("load", onLoad);
+    return () => iframeRef.current.removeEventListener("load", onLoad);
+  }, [demo]);
+
   return (
     demo && (
-      <div className="demo">
+      <div className={classNames("demo", { "demo--loading": !isDemoLoaded })}>
         <p className="demo__desciption">{demo.description}</p>
+        {isDemoLoaded || <p>Loading...</p>}
         <iframe
+          ref={iframeRef}
           className="demo__display"
-          height="700"
-          scrolling="no"
           title={demo.title}
           src={`${demo.link}?default-tab=js%2Cresult&theme-id=dark`}
-          loading="lazy"
-          allowtransparency="true"
-          allowfullscreen="true"
         ></iframe>
       </div>
     )
