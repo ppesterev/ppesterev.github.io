@@ -9,6 +9,12 @@
   }
 }
 
+.demo__description {
+  margin-top: 0;
+  min-height: 2em;
+  border-bottom: 2px solid $color-accent-faded;
+}
+
 .demo__display {
   width: 100%;
   min-height: 700px;

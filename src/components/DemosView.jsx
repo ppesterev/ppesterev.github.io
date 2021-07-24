@@ -24,7 +24,11 @@ function DemosView({ demos }) {
         ))}
       </ul>
       <div className="demos__demo-view">
-        {selectedDemo ? <Demo demo={selectedDemo} /> : <p>Select a demo</p>}
+        {selectedDemo ? (
+          <Demo demo={selectedDemo} />
+        ) : (
+          <p className="demos__placeholder-text">Select a demo</p>
+        )}
       </div>
     </section>
   );
