@@ -1,5 +1,4 @@
-.vscode
-.parcel-cache
-node_modules
-static-original
-dist
+**/*
+!/assets
+!/assets/**/*
+!portfolio-data.json
