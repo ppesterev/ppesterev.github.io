@@ -42,11 +42,11 @@
   "tags": {
     "react": {
       "color": "#000000",
-      "bgColor": "#61dafb88"
+      "bgColor": "#61dafb"
     },
     "vue": {
       "color": "#34495e",
-      "bgColor": "#41b88388"
+      "bgColor": "#41b883"
     }
   }
 }

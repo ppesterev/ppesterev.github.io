@@ -12,7 +12,9 @@ function Project({ project, tagData }) {
               className="project__tag"
               style={{
                 color: tagData[tag]?.color || "black",
-                backgroundColor: tagData[tag]?.bgColor || "whitesmoke"
+                backgroundColor: tagData[tag]?.bgColor
+                  ? `${tagData[tag]?.bgColor}80`
+                  : "#ffffff80"
               }}
             >
               {tagData[tag]?.text || tag}
@@ -20,9 +22,9 @@ function Project({ project, tagData }) {
           ))}
         </div>
         <img
-          src="https://via.placeholder.com/200"
+          src="https://via.placeholder.com/300x200"
           alt=""
-          width="200"
+          width="300"
           height="200"
           className="project__image"
         />
