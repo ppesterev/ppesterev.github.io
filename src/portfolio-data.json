@@ -2,15 +2,18 @@
   "projects": [
     {
       "title": "First project",
-      "description": "First project's description"
+      "description": "First project's description",
+      "tags": ["react"]
     },
     {
       "title": "Second project",
-      "description": " Description of second project"
+      "description": " Description of second project",
+      "tags": ["vue"]
     },
     {
       "title": "Third project",
-      "description": "Third project's brief description"
+      "description": "Third project's brief description",
+      "tags": ["vanilla js"]
     },
     {
       "title": "Fourth project",
@@ -34,5 +37,16 @@
       "description": "Description of 3rd demo",
       "link": "https://codepen.io/ppesterev/embed/GRqzweb"
     }
-  ]
+  ],
+
+  "tags": {
+    "react": {
+      "color": "#000000",
+      "bgColor": "#61dafb88"
+    },
+    "vue": {
+      "color": "#34495e",
+      "bgColor": "#41b88388"
+    }
+  }
 }

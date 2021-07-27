@@ -14,7 +14,10 @@ function App() {
       <main className="clamp-width">
         <Switch>
           <Route path="/projects">
-            <ProjectsView projects={portfolioData.projects} />
+            <ProjectsView
+              projects={portfolioData.projects}
+              tagData={portfolioData.tags}
+            />
           </Route>
           <Route path="/demos">
             <DemosView demos={portfolioData.demos} />
