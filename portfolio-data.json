@@ -1,22 +1,22 @@
 {
   "projects": [
     {
-      "title": "First project",
+      "title": "Mealsicles",
       "description": "First project's description",
       "tags": ["react"]
     },
     {
-      "title": "Second project",
+      "title": "Weather thing",
       "description": " Description of second project",
       "tags": ["vue"]
     },
     {
-      "title": "Third project",
+      "title": "xkcd viewer",
       "description": "Third project's brief description",
       "tags": ["vanilla js"]
     },
     {
-      "title": "Fourth project",
+      "title": "Big Trip",
       "description": "Fourth project description"
     }
   ],
