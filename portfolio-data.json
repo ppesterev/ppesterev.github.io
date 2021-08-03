@@ -2,22 +2,23 @@
   "projects": [
     {
       "title": "Mealsicles",
-      "description": "First project's description",
+      "description": "A recipe site made with React using the MealDB API.",
       "tags": ["react"]
     },
     {
       "title": "Weather thing",
-      "description": " Description of second project",
+      "description": "A weather app using the MetaWeather API. Search for locations using the map or the search field, add them to the tracked list and view the 6-day forecast for each.",
       "tags": ["vue"]
     },
     {
       "title": "xkcd viewer",
-      "description": "Third project's brief description",
+      "description": "A modern interface for the xkcd webcomic using the official JSON API. Includes transcripts.",
       "tags": ["vanilla js"]
     },
     {
       "title": "Big Trip",
-      "description": "Fourth project description"
+      "description": "A practice project from HTMLAcademy's JavaScript course, rewrittent in React.",
+      "tags": ["react"]
     }
   ],
 
@@ -31,11 +32,6 @@
       "title": "Second demo",
       "description": "2nd demo description",
       "link": "https://codepen.io/ppesterev/embed/zYZYrGO"
-    },
-    {
-      "title": "Third demo",
-      "description": "Description of 3rd demo",
-      "link": "https://codepen.io/ppesterev/embed/GRqzweb"
     }
   ],
 
@@ -47,6 +43,10 @@
     "vue": {
       "color": "#34495e",
       "bgColor": "#41b883"
+    },
+    "vanilla js": {
+      "color": "#000000",
+      "bgColor": "#f7df1e"
     }
   }
 }
