@@ -32,7 +32,7 @@
     },
     {
       "title": "Big Trip",
-      "description": "A practice project from HTMLAcademy's JavaScript course, rewrittent in React.",
+      "description": "A practice project from HTMLAcademy's JavaScript course, rewritten in React.",
       "image": "bigtrip.png",
       "tags": ["react"],
       "links": {
