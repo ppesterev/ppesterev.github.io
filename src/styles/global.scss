@@ -15,6 +15,10 @@ body {
   color: #444444;
   background: #dddddd;
   overflow-y: scroll;
+
+  *::selection {
+    background-color: $color-accent-faded;
+  }
 }
 
 a {
