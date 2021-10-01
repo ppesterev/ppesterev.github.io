@@ -3,22 +3,42 @@
     {
       "title": "Mealsicles",
       "description": "A recipe site made with React using the MealDB API.",
-      "tags": ["react"]
+      "image": "mealsicles.png",
+      "tags": ["react"],
+      "links": {
+        "demo": "https://ppesterev.github.io/mealsicles",
+        "source": "https://github.com/ppesterev/mealsicles"
+      }
     },
     {
       "title": "Weather thing",
       "description": "A weather app using the MetaWeather API. Search for locations using the map or the search field, add them to the tracked list and view the 6-day forecast for each.",
-      "tags": ["vue"]
+      "image": "weather-thing.png",
+      "tags": ["vue"],
+      "links": {
+        "demo": "https://ppesterev.github.io/weather-thing",
+        "source": "https://github.com/ppesterev/weather-thing"
+      }
     },
     {
       "title": "xkcd viewer",
       "description": "A modern interface for the xkcd webcomic using the official JSON API. Includes transcripts.",
-      "tags": ["vanilla js"]
+      "image": "xkcd.png",
+      "tags": ["vanilla js"],
+      "links": {
+        "demo": "https://ppesterev.github.io/xkcd-viewer",
+        "source": "https://github.com/ppesterev/xkcd-viewer"
+      }
     },
     {
       "title": "Big Trip",
       "description": "A practice project from HTMLAcademy's JavaScript course, rewrittent in React.",
-      "tags": ["react"]
+      "image": "bigtrip.png",
+      "tags": ["react"],
+      "links": {
+        "demo": "https://ppesterev.github.io/bigtrip",
+        "source": "https://github.com/ppesterev/bigtrip"
+      }
     }
   ],
 
