@@ -4,7 +4,16 @@
   list-style: none;
 
   display: flex;
-  gap: 5px;
+  align-items: center;
+
+  gap: 10px;
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    border-top: 2px solid $color-accent;
+  }
 }
 
 .site-nav__item {
@@ -13,24 +22,52 @@
 }
 
 .site-nav__link {
-  padding: 10px 20px;
-  background: #444444;
-  border-radius: 10px 10px 0 0;
+  position: relative;
+  padding: 5px 15px;
 
-  color: white;
+  color: $color-base;
   font-size: 1.2em;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   text-transform: lowercase;
 
-  box-shadow: 0 -3px 0 0 #f68b1e;
   cursor: pointer;
 
-  transition: all linear 0.1s;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -5;
+    height: 50%;
+    width: 0;
+
+    background-color: $color-accent-faded;
+    transition: width ease 0.3s;
+    transform: skewX(15deg);
+  }
+
+  &::before {
+    top: 0;
+    left: 5px;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 5px;
+  }
 }
 
-.site-nav__link:hover,
+.site-nav__link:hover {
+  &::before,
+  &::after {
+    width: calc(100% - 5px);
+  }
+}
+
 .site-nav__link--active {
-  padding-bottom: 13px;
-  margin-top: -3px;
-  box-shadow: 0 -5px 0 0 #f68b1e;
+  &::before,
+  &::after {
+    width: calc(100% - 5px);
+    background-color: $color-accent;
+  }
 }
