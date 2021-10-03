@@ -21,8 +21,8 @@ function Project({ project, tagData }) {
               style={{
                 color: tagData[tag]?.color || "black",
                 backgroundColor: tagData[tag]?.bgColor
-                  ? `${tagData[tag]?.bgColor}80`
-                  : "#ffffff80"
+                  ? `${tagData[tag]?.bgColor}`
+                  : "#ffffff"
               }}
             >
               {tagData[tag]?.text || tag}
@@ -32,11 +32,18 @@ function Project({ project, tagData }) {
         <p className="project__description">{project.description}</p>
 
         <div className="project__links">
-          <a className="project__link" href={project.links.demo}>
+          <a
+            className="project__link"
+            href={project.links.demo}
+            target="_blank"
+          >
             Live demo
           </a>
-          <br />
-          <a className="project__link" href={project.links.source}>
+          <a
+            className="project__link"
+            href={project.links.source}
+            target="_blank"
+          >
             Source code
           </a>
         </div>
