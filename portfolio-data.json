@@ -52,6 +52,11 @@
       "title": "Timers",
       "description": "A React component implementing a timer, using a custom hook to abstract the time-keeping logic.",
       "link": "https://codepen.io/ppesterev/embed/zYZYrGO"
+    },
+    {
+      "title": "Bracket checking",
+      "description": "A demonstration of an algorithm that checks the correct matching of brackets in a string.",
+      "link": "https://codepen.io/ppesterev/embed/jOBgjOR"
     }
   ],
 
