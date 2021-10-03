@@ -44,13 +44,13 @@
 
   "demos": [
     {
-      "title": "First demo",
-      "description": "1st demo description",
+      "title": "Listicles",
+      "description": "A barebones todo app demonstrating recursive use of function components in React.",
       "link": "https://codepen.io/ppesterev/embed/GRqzweb"
     },
     {
-      "title": "Second demo",
-      "description": "2nd demo description",
+      "title": "Timers",
+      "description": "A React component implementing a timer, using a custom hook to abstract the time-keeping logic.",
       "link": "https://codepen.io/ppesterev/embed/zYZYrGO"
     }
   ],
