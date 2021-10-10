@@ -1,6 +1,8 @@
 @import "./common/variables.scss";
 @import "./global.scss";
 
+@import "./blocks/icon.scss";
+
 @import "./blocks/site-header.scss";
 @import "./blocks/site-nav.scss";
 
@@ -8,3 +10,5 @@
 @import "./blocks/project.scss";
 @import "./blocks/demos.scss";
 @import "./blocks/demo.scss";
+
+@import "./blocks/about.scss";

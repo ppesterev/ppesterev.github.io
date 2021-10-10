@@ -1,5 +1,7 @@
 import React from "react";
 
+import { ExternalLink as LinkIcon } from "react-feather";
+
 import { CONTENT_ROOT } from "../config";
 
 function Project({ project, tagData }) {
@@ -38,6 +40,7 @@ function Project({ project, tagData }) {
             target="_blank"
           >
             Live demo
+            <LinkIcon className="icon project__link-icon" />
           </a>
           <a
             className="project__link"
@@ -45,6 +48,7 @@ function Project({ project, tagData }) {
             target="_blank"
           >
             Source code
+            <LinkIcon className="icon project__link-icon" />
           </a>
         </div>
       </div>

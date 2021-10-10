@@ -88,6 +88,19 @@
   &:hover {
     background-color: rgba(10, 86, 121, 0.1);
   }
+
+  &:visited {
+    color: rgb(53, 10, 121);
+    &:hover {
+      background-color: rgba(53, 10, 121, 0.1);
+    }
+  }
+}
+
+.project__link-icon {
+  margin-left: 3px;
+  // margin-bottom: 3px;
+  vertical-align: top;
 }
 
 .project:hover {
