@@ -6,6 +6,7 @@ import { CONTENT_ROOT, CONTENT_DATA_FILE } from "../config";
 import Header from "./Header";
 import ProjectsView from "./ProjectsView";
 import DemosView from "./DemosView";
+import AboutView from "./AboutView";
 
 function App() {
   const [portfolioData, setPortfolioData] = useState({});
@@ -38,7 +39,7 @@ function App() {
               <DemosView demos={portfolioData.demos} />
             </Route>
             <Route path="/about">
-              <h2>About</h2>
+              <AboutView />
             </Route>
             <Route to="*">
               <Redirect to="/projects" />
