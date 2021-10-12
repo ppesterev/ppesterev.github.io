@@ -31,6 +31,7 @@
   font-weight: 700;
   text-transform: lowercase;
 
+  opacity: 0.8;
   cursor: pointer;
 
   &::before,
@@ -58,6 +59,7 @@
 }
 
 .site-nav__link:hover {
+  opacity: 1;
   &::before,
   &::after {
     width: calc(100% - 5px);
@@ -65,6 +67,7 @@
 }
 
 .site-nav__link--active {
+  opacity: 1;
   &::before,
   &::after {
     width: calc(100% - 5px);

@@ -1,6 +1,10 @@
 import React from "react";
 
-import { GitHub as GHIcon, Mail as MailIcon } from "react-feather";
+import {
+  GitHub as GHIcon,
+  Mail as MailIcon,
+  Phone as PhoneIcon
+} from "react-feather";
 
 function AboutView() {
   return (
@@ -17,8 +21,11 @@ function AboutView() {
           <a href="mailto:p.a.pesterev@gmail.com">
             <MailIcon className="icon" /> p.a.pesterev@gmail.com
           </a>
-          <a href="https://github.com/ppesterev">
+          <a href="https://github.com/ppesterev" target="_blank">
             <GHIcon className="icon" /> github.com/ppesterev
+          </a>
+          <a href="tel:+79132082850">
+            <PhoneIcon className="icon" /> +7 (913) 208-28-50
           </a>
         </div>
       </div>
