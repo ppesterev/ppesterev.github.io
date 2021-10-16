@@ -1,0 +1,30 @@
+.gh-commit {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "icon sha"
+    "icon msg";
+
+  font-family: "Consolas", "Courier New", monospace;
+  line-height: 1;
+}
+
+.gh-commit__sha {
+  grid-area: sha;
+}
+
+.gh-commit__message {
+  grid-area: msg;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.gh-commit__icon {
+  grid-area: icon;
+  place-self: center;
+  width: 24px;
+  height: 24px;
+  transform: rotate(90deg);
+}
