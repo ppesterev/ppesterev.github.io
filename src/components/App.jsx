@@ -8,9 +8,13 @@ import ProjectsView from "./ProjectsView";
 import DemosView from "./DemosView";
 import AboutView from "./AboutView";
 
+import { getGHEvents } from "../api/github-events";
+
 function App() {
   const [portfolioData, setPortfolioData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+
+  const [ghEvents, setGHEvents] = useState([]);
 
   useEffect(() => {
     fetch(`${CONTENT_ROOT}${CONTENT_DATA_FILE}`)
@@ -19,6 +23,12 @@ function App() {
         setIsLoading(false);
         setPortfolioData(data);
       });
+  }, []);
+
+  useEffect(() => {
+    getGHEvents()
+      .then((actions) => setGHEvents(actions))
+      .catch((err) => console.log(err));
   }, []);
 
   return (
@@ -39,7 +49,7 @@ function App() {
               <DemosView demos={portfolioData.demos} />
             </Route>
             <Route path="/about">
-              <AboutView />
+              <AboutView ghEvents={ghEvents} />
             </Route>
             <Route to="*">
               <Redirect to="/projects" />

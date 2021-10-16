@@ -6,7 +6,9 @@ import {
   Phone as PhoneIcon
 } from "react-feather";
 
-function AboutView() {
+import GithubLog from "./GithubLog";
+
+function AboutView({ ghEvents }) {
   return (
     <section className="about">
       <h2 className="visually-hidden">About</h2>
@@ -29,6 +31,7 @@ function AboutView() {
           </a>
         </div>
       </div>
+      <GithubLog events={ghEvents} />
     </section>
   );
 }
