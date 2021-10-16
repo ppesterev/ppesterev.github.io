@@ -1,4 +1,32 @@
+.gh-event {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "date desc"
+    "date list";
+  gap: 5px;
+}
+
+.gh-event__date {
+  grid-area: date;
+  place-self: start center;
+
+  font-family: $fonts-heading;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.gh-event__desc {
+  grid-area: desc;
+  margin: 0;
+
+  font-family: $fonts-heading;
+  font-weight: 400;
+}
+
 .gh-event__commit-list {
+  grid-area: list;
   margin: 0;
   padding: 0;
 
