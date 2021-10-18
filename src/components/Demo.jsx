@@ -16,7 +16,6 @@ function Demo({ demo }) {
   return (
     demo && (
       <div className={classNames("demo", { "demo--loading": !isDemoLoaded })}>
-        <p className="demo__description">{demo.description}</p>
         {isDemoLoaded || <p>Loading...</p>}
         <iframe
           ref={iframeRef}

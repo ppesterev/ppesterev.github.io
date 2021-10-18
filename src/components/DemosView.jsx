@@ -19,6 +19,9 @@ function DemosView({ demos }) {
               onClick={() => setSelectedDemo(demo)}
             >
               {demo.title}
+              {demo === selectedDemo ? (
+                <p className="demos__tab-desc">{demo.description}</p>
+              ) : null}
             </button>
           </li>
         ))}
