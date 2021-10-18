@@ -8,13 +8,30 @@
   gap: 5px;
 }
 
+.gh-event a {
+  padding: 2px 4px;
+
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .gh-event__date {
   grid-area: date;
   place-self: start center;
 
+  display: grid;
+
   font-family: $fonts-heading;
+  font-weight: 700;
   text-align: center;
-  text-transform: lowercase;
+}
+
+.gh-event__date-month {
+  font-size: 0.9em;
 }
 
 .gh-event__desc {

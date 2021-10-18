@@ -22,7 +22,8 @@ export default function GithubLogEvent({ event }) {
         className="gh-event__date"
         dateTime={new Date(event.created_at).toISOString()}
       >
-        {date} {month}
+        <span className="gh-event__date-number">{date}</span>
+        <span className="gh-event__date-month">{month}</span>
       </time>
       <h4 className="gh-event__desc">
         {`Created ${size} commit${size > 1 ? "s" : ""} in `}
@@ -31,7 +32,7 @@ export default function GithubLogEvent({ event }) {
         </a>
       </h4>
       <ul className="gh-event__commit-list">
-        {event.payload.commits.map((commit) => (
+        {event.payload.commits.reverse().map((commit) => (
           <li className="gh-event__commit-list-item">
             <GithubLogCommit commit={commit} />
           </li>
