@@ -57,6 +57,11 @@
       "title": "Bracket checking",
       "description": "A demonstration of an algorithm that checks the correct matching of brackets in a string.",
       "link": "https://codepen.io/ppesterev/embed/jOBgjOR"
+    },
+    {
+      "title": "Event rate limiting",
+      "description": "A visual demonstration of various methods of limiting the rate of events that fire too frequently.",
+      "link": "https://codepen.io/ppesterev/embed/MWvJYOw?default-tab=result&theme-id=dark"
     }
   ],
 
