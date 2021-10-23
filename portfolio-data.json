@@ -60,7 +60,7 @@
     },
     {
       "title": "Event rate limiting",
-      "description": "",
+      "description": "A visual demonstration of various methods of limiting the rate of events that fire too frequently.",
       "link": "https://codepen.io/ppesterev/embed/MWvJYOw?default-tab=result&theme-id=dark"
     }
   ],
