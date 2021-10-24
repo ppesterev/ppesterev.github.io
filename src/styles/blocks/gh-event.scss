@@ -9,8 +9,6 @@
 }
 
 .gh-event a {
-  padding: 2px 4px;
-
   color: inherit;
   text-decoration: underline;
 
@@ -40,6 +38,12 @@
 
   font-family: $fonts-heading;
   font-weight: 400;
+}
+
+.gh-event__icon {
+  margin: 0 5px 0 5px;
+  width: 24px;
+  height: 24px;
 }
 
 .gh-event__commit-list {
