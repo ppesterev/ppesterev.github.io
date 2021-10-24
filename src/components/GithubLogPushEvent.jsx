@@ -2,7 +2,7 @@ import React from "react";
 
 import GithubLogCommit from "./GithubLogCommit";
 
-export default function GithubLogPushEvent({ event }) {
+export default function GithubLogPushEvent({ event, repo }) {
   if (event.type !== "PushEvent") {
     return;
   }
@@ -14,9 +14,7 @@ export default function GithubLogPushEvent({ event }) {
     <>
       <h4 className="gh-event__desc">
         {`Created ${size} commit${size > 1 ? "s" : ""} in `}
-        <a href={`https://github.com/${event.repo.name}`}>
-          {isOwn ? repoName : event.repo.name}
-        </a>
+        <a href={repo.url}>{repo.label}</a>
       </h4>
       <ul className="gh-event__commit-list">
         {event.payload.commits.reverse().map((commit) => (
