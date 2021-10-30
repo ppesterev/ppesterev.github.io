@@ -3,6 +3,13 @@
   grid-template-columns: 300px 1fr;
   grid-template-areas: "tabs display";
   grid-gap: 20px;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tabs"
+      "display";
+  }
 }
 
 .demos__tab-list {

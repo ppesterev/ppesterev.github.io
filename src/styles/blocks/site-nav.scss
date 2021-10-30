@@ -14,6 +14,14 @@
     flex-grow: 1;
     border-top: 2px solid $color-accent;
   }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .site-nav__item {

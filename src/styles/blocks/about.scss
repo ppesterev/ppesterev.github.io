@@ -6,6 +6,17 @@
     "header sidebar"
     "desc sidebar";
   gap: 10px;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "desc"
+      "sidebar";
+
+    gap: 30px;
+  }
 }
 
 .about-header {
@@ -51,5 +62,29 @@
     &:active {
       color: rgb(26, 30, 34);
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .about-header {
+    place-items: center;
+    place-content: center;
+
+    grid-template-columns: minmax(10px, 1fr) minmax(100px, 200px) minmax(
+        10px,
+        1fr
+      );
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". img ."
+      "name name name"
+      "links links links";
+  }
+
+  .about-header__name,
+  .about-header__links {
+    text-align: center;
+    place-self: center;
+    margin: 0;
   }
 }
