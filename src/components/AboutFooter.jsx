@@ -11,7 +11,11 @@ export default function AboutFooter({ className }) {
       >
         This site's source code
       </a>
-      <img src="" alt="Personal logo" className="about-footer__logo" />
+      <img
+        src={new URL("../img/logo.png", import.meta.url)}
+        alt="Personal logo"
+        className="about-footer__logo"
+      />
     </div>
   );
 }
