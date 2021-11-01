@@ -1,10 +1,11 @@
 .about {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-areas:
     "header sidebar"
-    "desc sidebar";
+    "desc sidebar"
+    "foot sidebar";
   gap: 10px;
 
   @media (max-width: 500px) {
@@ -19,72 +20,6 @@
   }
 }
 
-.about-header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: minmax(auto, 200px) 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-    "img name"
-    "img links";
-  gap: 10px 20px;
-}
-
-.about-header__picture {
-  grid-area: img;
-
-  border-radius: 50%;
-}
-
-.about-header__name {
-  grid-area: name;
-  place-self: end start;
-  margin: 0;
-
-  font-family: $fonts-heading;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.about-header__links {
-  grid-area: links;
-  place-self: start;
-  margin-left: 20px;
-
-  display: grid;
-  gap: 5px;
-
-  a {
-    color: rgb(101, 114, 128);
-    &:hover {
-      color: rgb(64, 75, 85);
-    }
-    &:active {
-      color: rgb(26, 30, 34);
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .about-header {
-    place-items: center;
-    place-content: center;
-
-    grid-template-columns: minmax(10px, 1fr) minmax(100px, 200px) minmax(
-        10px,
-        1fr
-      );
-    grid-template-rows: auto;
-    grid-template-areas:
-      ". img ."
-      "name name name"
-      "links links links";
-  }
-
-  .about-header__name,
-  .about-header__links {
-    text-align: center;
-    place-self: center;
-    margin: 0;
-  }
+.about__sidebar {
+  grid-area: sidebar;
 }

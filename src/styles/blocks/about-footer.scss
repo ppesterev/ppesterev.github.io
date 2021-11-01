@@ -1,0 +1,29 @@
+.about-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  place-content: start center;
+  place-items: start center;
+  grid-template-areas:
+    "copy link"
+    "img img";
+  gap: 10px;
+
+  color: grey;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.about-footer__copy {
+  grid-area: copy;
+  place-self: start end;
+}
+
+.about-footer__link {
+  grid-area: link;
+  place-self: start;
+}
+
+.about-footer__logo {
+  grid-area: img;
+}
