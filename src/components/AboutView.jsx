@@ -12,17 +12,15 @@ function AboutView({ ghEvents }) {
       <GithubLog className="about__sidebar" events={ghEvents} />
       <div className="about__desc">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          quibusdam porro dolorem perspiciatis commodi, quam aliquid error! Nam,
-          quas mollitia beatae temporibus omnis, repellendus nobis, distinctio
-          cumque repudiandae saepe sunt quaerat error fugiat dolore vel eos!
-          Labore sit a nobis veniam? Tempore fuga eos sint ratione minus
-          voluptas ipsa enim.
+          I have been learning frontend web develoment since 2020, focusing on
+          the React framework and the way it fits into the SPA architecture.
+          I've come to appreciate the open nature of web development, with open
+          source tools as standard and an abundance of freely available learning
+          resources.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          neque sed saepe, eius odit exercitationem delectus? Accusamus
-          reprehenderit ab dicta!
+          If the examples on this site demonstrate the skills you are looking
+          for in a new hire, feel free to contact me via any of the means above.
         </p>
       </div>
       <AboutFooter />
