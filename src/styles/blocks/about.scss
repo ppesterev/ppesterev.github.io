@@ -1,0 +1,25 @@
+.about {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "header sidebar"
+    "desc sidebar"
+    "foot sidebar";
+  gap: 10px;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "desc"
+      "sidebar";
+
+    gap: 30px;
+  }
+}
+
+.about__sidebar {
+  grid-area: sidebar;
+}

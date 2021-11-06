@@ -1,0 +1,59 @@
+.gh-event {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "date desc"
+    "date list";
+  gap: 5px;
+}
+
+.gh-event a {
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.gh-event__date {
+  grid-area: date;
+  place-self: start center;
+
+  display: grid;
+
+  font-family: $fonts-heading;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gh-event__date-month {
+  font-size: 0.9em;
+}
+
+.gh-event__desc {
+  grid-area: desc;
+  margin: 0;
+
+  font-family: $fonts-heading;
+  font-weight: 400;
+}
+
+.gh-event__icon {
+  margin: 0 5px 0 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.gh-event__commit-list {
+  grid-area: list;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.gh-event__commit-list-item {
+  margin-bottom: 10px;
+}

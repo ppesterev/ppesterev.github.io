@@ -1,0 +1,22 @@
+.site-header {
+  margin-bottom: 20px;
+  padding: 20px 0 0 0;
+}
+
+.site-header__title,
+.site-header__subtitle {
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase;
+}
+
+.site-header__title {
+  margin: 0;
+}
+
+.site-header__subtitle {
+  margin: 10px 0 40px;
+
+  font-size: 1.8em;
+  font-weight: 200;
+  font-style: italic;
+}

@@ -1,0 +1,45 @@
+.about-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 80px;
+  place-content: start center;
+  place-items: start center;
+  grid-template-areas:
+    "copy link"
+    "img img";
+  gap: 30px 10px;
+
+  color: grey;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.about-footer__copy {
+  grid-area: copy;
+  place-self: start end;
+}
+
+.about-footer__link {
+  grid-area: link;
+  place-self: start;
+
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: #222222;
+  }
+}
+
+.about-footer__logo {
+  grid-area: img;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  border-radius: 50%;
+}

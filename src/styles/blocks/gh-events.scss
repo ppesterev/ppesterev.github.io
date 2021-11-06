@@ -1,0 +1,45 @@
+.gh-events {
+  display: grid;
+  gap: 20px;
+}
+
+.gh-events__heading {
+  margin: 0;
+  font-family: $fonts-heading;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.gh-events__list {
+  display: grid;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.gh-events__show-more-btn {
+  margin: 0 auto;
+  padding: 10px;
+
+  color: inherit;
+  font-family: $fonts-heading;
+  font-weight: 700;
+  text-transform: lowercase;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  opacity: 50%;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 90%;
+  }
+}
