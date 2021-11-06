@@ -17,11 +17,14 @@ export default function GithubLogPushEvent({ event, repo }) {
         <a href={repo.url}>{repo.label}</a>
       </h4>
       <ul className="gh-event__commit-list">
-        {event.payload.commits.reverse().map((commit) => (
-          <li className="gh-event__commit-list-item">
-            <GithubLogCommit commit={commit} />
-          </li>
-        ))}
+        {event.payload.commits
+          .slice()
+          .reverse()
+          .map((commit) => (
+            <li className="gh-event__commit-list-item">
+              <GithubLogCommit commit={commit} />
+            </li>
+          ))}
       </ul>
     </>
   );
