@@ -30,16 +30,6 @@
         "source": "https://github.com/ppesterev/xkcd-viewer"
       }
     },
-    {
-      "title": "Big Trip",
-      "description": "A practice project from HTMLAcademy's JavaScript course, rewritten in React.",
-      "image": "bigtrip.png",
-      "tags": ["react"],
-      "links": {
-        "demo": "https://ppesterev.github.io/bigtrip",
-        "source": "https://github.com/ppesterev/bigtrip"
-      }
-    }
   ],
 
   "demos": [
