@@ -10,7 +10,7 @@ export default function AboutHeader({ className }) {
   return (
     <div className={`about-header ${className || ""}`}>
       <img
-        src={new URL("../img/avatar-gs.png", import.meta.url)}
+        src={new URL("../img/avatar-gs.jpg", import.meta.url)}
         alt="My photo"
         className="about-header__picture"
       />
