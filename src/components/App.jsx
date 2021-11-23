@@ -31,6 +31,13 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
 
+  /* wake up the proxy dyno in case the visitor wants
+   * to check out one of those apps
+   */
+  useEffect(() => {
+    fetch("https://eigencors.herokuapp.com/");
+  }, []);
+
   return (
     <>
       <Header />
