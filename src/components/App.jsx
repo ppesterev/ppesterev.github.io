@@ -59,7 +59,7 @@ function App() {
               <AboutView ghEvents={ghEvents} />
             </Route>
             <Route to="*">
-              <Redirect to="/projects" />
+              <Redirect to="/about" />
             </Route>
           </Switch>
         )}

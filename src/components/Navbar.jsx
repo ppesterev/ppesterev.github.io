@@ -8,6 +8,15 @@ function Navbar({ className }) {
       <ul className="site-nav__list">
         <li className="site-nav__item">
           <NavLink
+            to="/about"
+            className="site-nav__link"
+            activeClassName="site-nav__link--active"
+          >
+            About
+          </NavLink>
+        </li>
+        <li className="site-nav__item">
+          <NavLink
             to="/projects"
             className="site-nav__link"
             activeClassName="site-nav__link--active"
@@ -22,15 +31,6 @@ function Navbar({ className }) {
             activeClassName="site-nav__link--active"
           >
             Demos
-          </NavLink>
-        </li>
-        <li className="site-nav__item">
-          <NavLink
-            to="/about"
-            className="site-nav__link"
-            activeClassName="site-nav__link--active"
-          >
-            About
           </NavLink>
         </li>
       </ul>
