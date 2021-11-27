@@ -1,5 +1,6 @@
 .site-section__desc {
-  margin: 0 0 10px 0;
+  max-width: 80ch;
+  margin: 0 auto 40px;
   padding-bottom: 10px;
   border-bottom: 1px solid $color-accent-faded;
 }
