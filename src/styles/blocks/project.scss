@@ -106,7 +106,8 @@
   margin-bottom: 3px;
 }
 
-.project:hover {
+.project:hover,
+.project:focus-within {
   .project__text {
     opacity: 1;
   }
