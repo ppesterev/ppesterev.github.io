@@ -36,8 +36,8 @@
       "image": "hungout.png",
       "tags": ["typescript", "node", "websocket"],
       "links": {
-        "demo": "https://ppesterev.github.io/xkcd-viewer",
-        "source": "https://github.com/ppesterev/xkcd-viewer"
+        "demo": "https://hung-out-to-dry.herokuapp.com",
+        "source": "https://github.com/ppesterev/hung-out"
       }
     }
   ],
