@@ -80,11 +80,11 @@
     },
     "typescript": {
       "color": "#ffffff",
-      "bgCcolor": "#3178c6"
+      "bgColor": "#3178c6"
     },
     "node": {
       "color": "#ffffff",
-      "bgCcolor": "#87bf00"
+      "bgColor": "#87bf00"
     }
   }
 }
