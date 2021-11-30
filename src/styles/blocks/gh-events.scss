@@ -1,5 +1,6 @@
 .gh-events {
   display: grid;
+  place-content: start stretch;
   gap: 20px;
 }
 
